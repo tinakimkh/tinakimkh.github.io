@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>My First Webpage</title>
         <link href="css/styles.css" type="text/css" rel="stylesheet" />
 	</head>
 	<body>
@@ -10,6 +9,73 @@
         <p>I am building for several reasons. I'd like to familiarize myself with using Git, Git-Pages, and Git-Hub for software development. 
         I'd like to familiarize myself with HTML and CSS; in particular, I'd like to get a sense for what it takes to create modern web-pages from scratch. 
         Lastly, I'd like to build a dope enough personal website for my sister to encourage her to produce more art and share it with whoever might be interested.</p>
+        <!-- Images used to open the lightbox -->
+        <div class="row">
+            <div class="column">
+                <img src="images/sequential/deviantart_89056939_HT - Linda.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/sequential/deviantart_89427263_HT - Street Smart.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/sequential/deviantart_90403866_HT - Facebook.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+            </div>
+            <div class="column">
+                <img src="images/sequential/deviantart_91107913_HT - Why Shopping Fails.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+            </div>
+        </div>
+
+        <!-- The Modal/Lightbox -->
+        <div id="myModal" class="modal">
+            <span class="close cursor" onclick="closeModal()">&times;</span>
+            <div class="modal-content">
+
+                <div class="mySlides">
+                    <div class="numbertext">1 / 4</div>
+                    <img src="images/sequential/deviantart_89056939_HT - Linda.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">2 / 4</div>
+                    <img src="images/sequential/deviantart_89427263_HT - Street Smart.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">3 / 4</div>
+                    <img src="images/sequential/deviantart_90403866_HT - Facebook.jpg" style="width:100%">
+                </div>
+
+                <div class="mySlides">
+                    <div class="numbertext">4 / 4</div>
+                    <img src="images/sequential/deviantart_91107913_HT - Why Shopping Fails.jpg" style="width:100%">
+                </div>
+
+            <!-- Next/previous controls -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- Caption text -->
+            <div class="caption-container">
+                <p id="caption"></p>
+            </div>
+    
+            <!-- Thumbnail image controls -->
+            <div class="column">
+                <img class="demo" src="images/sequential/deviantart_89056939_HT - Linda.jpg" onclick="currentSlide(1)" alt="Nature">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/sequential/deviantart_89427263_HT - Street Smart.jpg" onclick="currentSlide(2)" alt="Snow">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/sequential/deviantart_90403866_HT - Facebook.jpg" onclick="currentSlide(3)" alt="Mountains">
+            </div>
+
+            <div class="column">
+                <img class="demo" src="images/sequential/deviantart_91107913_HT - Why Shopping Fails.jpg" onclick="currentSlide(4)" alt="Lights">
+            </div>
+            </div>
+        </div>
     </body>
-    <img src="images/deviantart_294170558_Cartoon Me.jpg" alt="Cartoon Tina"/>
 </html>
