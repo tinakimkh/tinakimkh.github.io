@@ -1,9 +1,42 @@
 /* My first CSS style file!*/
+* {
+     border: 5px dashed black;
+}
 
 body {
     font-family: arial;
-    background-color: rgb(185,179,175);}
-h1 {
-    color: rgb(255,255,255);}
+}
 
+h1 {
+    color: rgb(255,255,255);
+}
+
+#intro-block {
+    float: left;
+    height: 500px;
+    width: 40%;
+}
+
+#name {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#toonTina {
+    float: right;
+    height: 500px;
+    width: 40%;
+}
+
+p.blocktext { 
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    width: 8em;
+}
 
